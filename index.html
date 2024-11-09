@@ -1,11 +1,12 @@
 <html>
 
 <body>
-  <div id="app">
-    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/jsx">
+  <div id="app"></div>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script type="text/jsx">
       // Select the div element with 'app' id
       const app = document.getElementById("app");
 
@@ -15,6 +16,7 @@
 
       function HomePage() {
         const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+        
         const [likes, setLikes] = React.useState(0);
 
         function handleClick() {
